@@ -18,7 +18,6 @@ hr {
   color: var(--grayish-blue);
 }
 
-
 ul {
   color: var(--dark-grayish-blue);
 }
@@ -43,6 +42,12 @@ ul {
 .desktop-img {
   width: 100%;
   object-fit: cover;
+  display: block;
+}
+.mobile-img {
+  width: 100%;
+  object-fit: cover;
+  display: none;
 }
 
 .side-card-container {
@@ -86,43 +91,48 @@ ul {
   font-size: 15px;
 }
 
-.content button:hover{
-    background: var(--very-dark-blue);
-    color: var(--off-white);
+.content button:hover {
+  background: var(--very-dark-blue);
+  color: var(--off-white);
 }
 
 .card {
-    border: none;
+  border: none;
 }
 
-.card img{
-    width: 100%;
-    height: 100%;
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
 .card-content h5 {
-    color: var(--soft-orange);
-    padding-top: 1.5rem;
-    font-weight: 700;
+  color: var(--soft-orange);
+  padding-top: 1.5rem;
+  font-weight: 700;
 }
 .card-content h6 {
-    color: var(--very-dark-blue);
-    font-weight: 800;
+  color: var(--very-dark-blue);
+  font-weight: 800;
 }
 .card-content h6:hover {
-    cursor: pointer;
-    color: var(--soft-orange);
+  cursor: pointer;
+  color: var(--soft-orange);
 }
 .card-content p {
-    color: var(--very-dark-blue);
+  color: var(--very-dark-blue);
 }
 
-
-@media (max-width:500px) {
-    .side-card-container{
-        margin-top: 2rem;
-    }
-    .card {
-        padding-top: 1rem;
-    }
+@media (max-width: 500px) {
+  .side-card-container {
+    margin-top: 2rem;
+  }
+  .card {
+    padding-top: 1rem;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .desktop-img {
+    display: none;
+  }
 }
