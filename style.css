@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --ff: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--ff);
+}
+
+hr {
+  color: var(--grayish-blue);
+}
+
+
+ul {
+  color: var(--dark-grayish-blue);
+}
+
+.desktop-nav li:hover {
+  cursor: pointer;
+  color: var(--soft-orange);
+}
+
+.mobile-nav {
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 4rem;
+}
+
+/* .hamburger-icon{
+    position: absolute;
+    z-index: 1;
+} */
+
+.desktop-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.side-card-container {
+  background: var(--very-dark-blue);
+  padding: 3rem;
+}
+
+.side-card h2 {
+  color: var(--soft-orange);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.side-topic h4 {
+  color: var(--off-white);
+  cursor: pointer;
+}
+.side-topic h4:hover {
+  color: var(--soft-orange);
+}
+
+.side-topic p {
+  color: var(--grayish-blue);
+  font-size: 15px;
+}
+
+.head-line h1 {
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+.content p {
+  color: var(--dark-grayish-blue);
+  font-size: 15px;
+}
+
+.content button {
+  background-color: var(--soft-red);
+  border: none;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  font-size: 15px;
+}
+
+.content button:hover{
+    background: var(--very-dark-blue);
+    color: var(--off-white);
+}
+
+.card {
+    border: none;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-content h5 {
+    color: var(--soft-orange);
+    padding-top: 1.5rem;
+    font-weight: 700;
+}
+.card-content h6 {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+}
+.card-content h6:hover {
+    cursor: pointer;
+    color: var(--soft-orange);
+}
+.card-content p {
+    color: var(--very-dark-blue);
+}
+
+
+@media (max-width:500px) {
+    .side-card-container{
+        margin-top: 2rem;
+    }
+    .card {
+        padding-top: 1rem;
+    }
+}
