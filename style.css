@@ -87,7 +87,8 @@ ul {
 }
 
 .content button {
-  background-color: var(--soft-red);
+  background: var(--soft-red);
+  color: var(--very-dark-blue);
   border: none;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   font-size: 15px;
